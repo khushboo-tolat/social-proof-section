@@ -1,0 +1,225 @@
+$white: hsl(0, 0%, 100%);
+$magenta: hsl(300, 43%, 22%);
+$pink: hsl(333, 80%, 67%);
+$dgm: hsl(303, 10%, 53%);
+$lgm: hsl(300, 24%, 96%);
+
+@font-face {
+     font-family: "Spartan";
+     src: url(Spartan/Spartan-VariableFont_wght.ttf);
+}
+
+* {
+     box-sizing: border-box;
+}
+
+body{
+     margin: 0;
+     font-family: "Spartan";
+     background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+     background-position: left top, right bottom;
+     background-repeat: no-repeat;
+}
+
+.main-section{
+     width: 90%;
+     margin: 7em auto 2em;
+
+     .top-section{
+          text-align: center;
+          margin-bottom: 50px;
+
+          .top-left{
+               width: 100%;
+
+               .left-heading{                    
+                    color: $magenta;
+                    font-size: 1.9em;
+                    font-weight: bold;
+                    margin: 5px auto;
+               }
+
+               .left-content{
+                    color: $dgm;
+                    font-size: 0.9em;
+                    font-weight: bold;
+                    line-height: 1.3em;
+               }
+          }
+
+          .top-right{
+               width: 100%;
+               float: none;
+               margin: 1.5em auto;
+
+               .right-content{
+                    .rating{
+                         background-color: $lgm;
+                         margin: 0 0 1.3em;
+                         padding: 1em 2em;
+                         border-radius: 10px;
+
+                         p{
+                              color: $magenta;
+                              font-weight: bold;
+                         }
+                    }
+               }
+          }
+     }
+
+     .bottom-section{
+          .card{
+               width: 100%;
+               background-color: $magenta;
+               border-radius: 10px;
+               margin: 20px 0;
+               padding: 40px 30px;
+
+               .card-top{
+                    display: flex;
+                    flex-direction: row;
+                    margin-bottom: 20px;
+
+                    .user-img{
+                         width: 30%;
+                         display: inline;
+
+                         img{
+                              width: 3em;
+                              height: 3em;
+                              border-radius: 50%;
+                         }
+                    }
+
+                    .user-info{
+                         width: 70%;
+                         display: inline;
+
+                         .name{
+                              color: $lgm;
+                              font-weight: bold;
+                              line-height: 1.5em;
+                         }
+
+                         .designation{
+                              color: $pink;
+                              line-height: 1.5em;
+                         }
+                    }
+               }
+
+               .card-bottom{
+                    width: 100%;
+                    color: $lgm;
+                    font-size: 0.85em;
+                    line-height: 1.7em;
+               }
+          }
+     }
+}
+
+.attribution {
+     font-size: 0.6em;
+     text-align: center;
+     font-weight: bold;
+     letter-spacing: 0.1em;
+     margin-bottom: 3em;
+
+     a{
+          color: $magenta;
+          text-decoration: none;
+     }
+}
+
+@media only screen and (min-width: 376px) {
+     body{
+          background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+          background-position: left top, right bottom;
+          background-repeat: no-repeat;
+     } 
+
+     .main-section{
+          width: 80%;
+          margin: 10em auto 5em;
+     
+          .top-section{
+               text-align: left;
+               display: flex;
+               flex-direction: row;
+     
+               .top-left{
+                    width: 50%;
+     
+                    .left-heading{
+                         margin: 0 0 20px;
+                         font-size: 3.5em;
+                         line-height: 1em;
+                    }
+     
+                    .left-content{
+                         font-size: 1.2em;
+                    }
+               }
+
+               .top-right{
+                    width: 50%;
+     
+                    .right-content{
+                         .rating{
+                              width: 80%;
+                              padding: 1.5em 2em;
+
+                              div{
+                                   display: inline;
+                              }
+
+                              p{
+                                   display: inline;
+                                   padding-left: 30px;
+                              }
+                         }
+
+                         #rating-first{
+                              margin-left: 10px;
+                         }
+
+                         #rating-second{
+                              margin-left: 50px;
+                         }
+
+                         #rating-third{
+                              margin-left: 90px;
+                         }
+                    }
+               }
+          }
+
+          .bottom-section{
+               display: flex;
+               flex-direction: row;
+
+               .card{
+                    width: 30%;
+                    height: 15.5em;
+                    margin: 0 20px;
+               }
+
+               #card-first{
+                    margin-top: 20px;
+               }
+
+               #card-second{
+                    margin-top: 40px;
+               }
+
+               #card-third{
+                    margin-top: 60px;
+               }
+          }
+     }
+
+     .attribution {
+          font-size: 1em;
+     }
+}

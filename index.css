@@ -1,0 +1,182 @@
+@font-face {
+  font-family: "Spartan";
+  src: url(Spartan/Spartan-VariableFont_wght.ttf);
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Spartan";
+  background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+  background-position: left top, right bottom;
+  background-repeat: no-repeat;
+}
+
+.main-section {
+  width: 90%;
+  margin: 7em auto 2em;
+}
+.main-section .top-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.main-section .top-section .top-left {
+  width: 100%;
+}
+.main-section .top-section .top-left .left-heading {
+  color: #502050;
+  font-size: 1.9em;
+  font-weight: bold;
+  margin: 5px auto;
+}
+.main-section .top-section .top-left .left-content {
+  color: #937b92;
+  font-size: 0.9em;
+  font-weight: bold;
+  line-height: 1.3em;
+}
+.main-section .top-section .top-right {
+  width: 100%;
+  float: none;
+  margin: 1.5em auto;
+}
+.main-section .top-section .top-right .right-content .rating {
+  background-color: #f7f2f7;
+  margin: 0 0 1.3em;
+  padding: 1em 2em;
+  border-radius: 10px;
+}
+.main-section .top-section .top-right .right-content .rating p {
+  color: #502050;
+  font-weight: bold;
+}
+.main-section .bottom-section .card {
+  width: 100%;
+  background-color: #502050;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 40px 30px;
+}
+.main-section .bottom-section .card .card-top {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.main-section .bottom-section .card .card-top .user-img {
+  width: 30%;
+  display: inline;
+}
+.main-section .bottom-section .card .card-top .user-img img {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+}
+.main-section .bottom-section .card .card-top .user-info {
+  width: 70%;
+  display: inline;
+}
+.main-section .bottom-section .card .card-top .user-info .name {
+  color: #f7f2f7;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+.main-section .bottom-section .card .card-top .user-info .designation {
+  color: #ee68a4;
+  line-height: 1.5em;
+}
+.main-section .bottom-section .card .card-bottom {
+  width: 100%;
+  color: #f7f2f7;
+  font-size: 0.85em;
+  line-height: 1.7em;
+}
+
+.attribution {
+  font-size: 0.6em;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  margin-bottom: 3em;
+}
+.attribution a {
+  color: #502050;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 376px) {
+  body {
+    background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat;
+  }
+
+  .main-section {
+    width: 80%;
+    margin: 10em auto 5em;
+  }
+  .main-section .top-section {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+  }
+  .main-section .top-section .top-left {
+    width: 50%;
+  }
+  .main-section .top-section .top-left .left-heading {
+    margin: 0 0 20px;
+    font-size: 3.5em;
+    line-height: 1em;
+  }
+  .main-section .top-section .top-left .left-content {
+    font-size: 1.2em;
+  }
+  .main-section .top-section .top-right {
+    width: 50%;
+  }
+  .main-section .top-section .top-right .right-content .rating {
+    width: 80%;
+    padding: 1.5em 2em;
+  }
+  .main-section .top-section .top-right .right-content .rating div {
+    display: inline;
+  }
+  .main-section .top-section .top-right .right-content .rating p {
+    display: inline;
+    padding-left: 30px;
+  }
+  .main-section .top-section .top-right .right-content #rating-first {
+    margin-left: 10px;
+  }
+  .main-section .top-section .top-right .right-content #rating-second {
+    margin-left: 50px;
+  }
+  .main-section .top-section .top-right .right-content #rating-third {
+    margin-left: 90px;
+  }
+  .main-section .bottom-section {
+    display: flex;
+    flex-direction: row;
+  }
+  .main-section .bottom-section .card {
+    width: 30%;
+    height: 15.5em;
+    margin: 0 20px;
+  }
+  .main-section .bottom-section #card-first {
+    margin-top: 20px;
+  }
+  .main-section .bottom-section #card-second {
+    margin-top: 40px;
+  }
+  .main-section .bottom-section #card-third {
+    margin-top: 60px;
+  }
+
+  .attribution {
+    font-size: 1em;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
