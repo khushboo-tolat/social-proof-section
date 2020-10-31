@@ -94,7 +94,7 @@ body {
 }
 
 .attribution {
-  font-size: 0.6em;
+  font-size: 0.5em;
   text-align: center;
   font-weight: bold;
   letter-spacing: 0.1em;
@@ -105,7 +105,7 @@ body {
   text-decoration: none;
 }
 
-@media only screen and (min-width: 376px) {
+@media only screen and (min-width: 426px) {
   body {
     background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
     background-position: left top, right bottom;
