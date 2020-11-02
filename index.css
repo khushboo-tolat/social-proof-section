@@ -113,6 +113,99 @@ body {
   }
 
   .main-section {
+    width: 85%;
+    margin: 8.5em auto 3.5em;
+  }
+  .main-section .top-section .top-left {
+    width: 100%;
+  }
+  .main-section .top-section .top-left .left-heading {
+    margin: 0 0 20px;
+    font-size: 2em;
+    line-height: 1em;
+  }
+  .main-section .top-section .top-left .left-content {
+    font-size: 1em;
+  }
+  .main-section .top-section .top-right {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .main-section .top-section .top-right .right-content .rating {
+    width: 70%;
+    padding: 1.5em 2em;
+  }
+  .main-section .top-section .top-right .right-content .rating div {
+    display: inline;
+  }
+  .main-section .top-section .top-right .right-content .rating p {
+    display: inline;
+    padding-left: 30px;
+  }
+  .main-section .top-section .top-right .right-content #rating-first {
+    margin-left: 60px;
+  }
+  .main-section .top-section .top-right .right-content #rating-second {
+    margin-left: 110px;
+  }
+  .main-section .top-section .top-right .right-content #rating-third {
+    margin-left: 160px;
+  }
+  .main-section .bottom-section .card {
+    width: 70%;
+    height: max-content;
+    margin: 20px auto;
+  }
+
+  .attribution {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .main-section {
+    width: 80%;
+    margin: 10em auto 5em;
+  }
+  .main-section .top-section .top-left {
+    width: 90%;
+    margin: auto;
+  }
+  .main-section .top-section .top-left .left-heading {
+    margin: 0 0 20px;
+    font-size: 3em;
+    line-height: 1em;
+  }
+  .main-section .top-section .top-left .left-content {
+    font-size: 1.2em;
+  }
+  .main-section .top-section .top-right {
+    width: 80%;
+    margin: 40px auto 0;
+  }
+  .main-section .top-section .top-right .right-content .rating {
+    width: 80%;
+  }
+  .main-section .bottom-section {
+    display: flex;
+    flex-direction: row;
+  }
+  .main-section .bottom-section .card {
+    width: 30%;
+    height: 20em;
+    margin: 0 20px;
+  }
+  .main-section .bottom-section #card-first {
+    margin-top: 20px;
+  }
+  .main-section .bottom-section #card-second {
+    margin-top: 40px;
+  }
+  .main-section .bottom-section #card-third {
+    margin-top: 60px;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .main-section {
     width: 80%;
     margin: 10em auto 5em;
   }
@@ -125,26 +218,13 @@ body {
     width: 50%;
   }
   .main-section .top-section .top-left .left-heading {
-    margin: 0 0 20px;
     font-size: 3.5em;
-    line-height: 1em;
-  }
-  .main-section .top-section .top-left .left-content {
-    font-size: 1.2em;
   }
   .main-section .top-section .top-right {
     width: 50%;
   }
   .main-section .top-section .top-right .right-content .rating {
     width: 80%;
-    padding: 1.5em 2em;
-  }
-  .main-section .top-section .top-right .right-content .rating div {
-    display: inline;
-  }
-  .main-section .top-section .top-right .right-content .rating p {
-    display: inline;
-    padding-left: 30px;
   }
   .main-section .top-section .top-right .right-content #rating-first {
     margin-left: 10px;
@@ -155,27 +235,8 @@ body {
   .main-section .top-section .top-right .right-content #rating-third {
     margin-left: 90px;
   }
-  .main-section .bottom-section {
-    display: flex;
-    flex-direction: row;
-  }
   .main-section .bottom-section .card {
-    width: 30%;
-    height: 15.5em;
-    margin: 0 20px;
-  }
-  .main-section .bottom-section #card-first {
-    margin-top: 20px;
-  }
-  .main-section .bottom-section #card-second {
-    margin-top: 40px;
-  }
-  .main-section .bottom-section #card-third {
-    margin-top: 60px;
-  }
-
-  .attribution {
-    font-size: 1em;
+    height: 16em;
   }
 }
 
